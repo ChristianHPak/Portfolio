@@ -1964,3 +1964,22 @@ a {
 .hover-border-pale-blue:hover {
     border-color: #e7ffff !important
 }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", sans-serif
+}
+
+.third img {
+    margin-bottom: -6px;
+    opacity: 0.8;
+    cursor: pointer
+}
+
+.third img:hover {
+    opacity: 1
+}

@@ -1,226 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-<body class="light-grey content" style="max-width:1600px">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
 
-    <!-- Sidebar/menu -->
-    <nav class="sidebar bar-block white animate-left text-grey collapse top center"
-        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-        <h3 class="padding-64 center"><b>Christian<br>Pak</b></h3>
-        <!-- <a href="javascript:void(0)" onclick="close()" class="bar-item button padding hide-large">CLOSE</a> -->
-        <a href="#" onclick="close()" class="bar-item button">PORTFOLIO</a>
-        <a href="#about" onclick="close()" class="bar-item button">ABOUT ME</a>
-        <a href="#contact" onclick="close()" class="bar-item button">CONTACT</a>
-    </nav>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="#"><li>Logo and Picture</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Experience</li></a>
+        <a href="#"><li>Projects</li></a>
+        <a href="#"><li>Skills</li></a>
+        <a href="#"><li>Education</li></a>
+        <a href="#"><li>Contact Me</li></a>
+    </div> 
 
-    <!-- Top menu on small screens -->
-    <header class="container top hide-large white xlarge padding-16">
-        <span class="left padding">SOME NAME</span>
-        <a href="javascript:void(0)" class="right button white" onclick="open()">☰</a>
-    </header>
+    <div id="main">
 
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="overlay hide-large animate-opacity" onclick="close()" style="cursor:pointer" title="close side menu"
-        id="myOverlay"></div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="main" style="margin-left:300px">
-
-        <!-- Push down content on small screens -->
-        <div class="hide-large" style="margin-top:83px"></div>
-
-        <!-- Photo grid -->
-        <div class="row">
-            <div class="third">
-                <a href="https://christianhpak.github.io/BandSpot/"><img src="assets/images/project1.png"
-                        style="width:100%" onclick="onClick(this)" alt="Project 1 album spot Trilogy Bootcamp"></a>
-                <a href="https://christianhpak.github.io/Unit-4-Game/"><img src="assets/images/crystal.jpg"
-                        style="width:100%" onclick="onClick(this)" alt="Crystal collector Trilogy Bootcamp"></a>
-                <a href="https://christianhpak.github.io/TrainScheduler/"><img src="assets/images/Train_schedule.jpg" style="width:90%" onclick="onClick(this)"
-                        alt="Train Scheduler Trilogy Bootcamp"></a>
-            </div>
-
-            <div class="third">
-                <a href="https://christianhpak.github.io/TriviaGame/"><img src="assets/images/trivia.jpg" style="width:100%" onclick="onClick(this)"
-                        alt="Trivia Game Trilogy Bootcamp"></a>
-                <a href="https://christianhpak.github.io/Psychic-Game"><img src="assets/images/psychic.jpg" style="width:100%" onclick="onClick(this)"
-                        alt="Psychic Game Trilogy Bootcamp"></a>
-                <a href="https://christianhpak.github.io/Bootstrap-Portfolio/"><img src="assets/images/bootstrap.png" style="width:100%" onclick="onClick(this)"
-                        alt="Basic Bootstrap Portfolio Trilogy Bootcamp"></a>
-            </div>
-        </div>
-
-        <!-- Pagination -->
-        <!-- <div class="center padding-32">
-            <div class="bar">
-                <a href="#" class="bar-item button hover-black">«</a>
-                <a href="#" class="bar-item black button">1</a>
-                <a href="#" class="bar-item button hover-black">2</a>
-                <a href="#" class="bar-item button hover-black">3</a>
-                <a href="#" class="bar-item button hover-black">4</a>
-                <a href="#" class="bar-item button hover-black">»</a>
-            </div>
-        </div> -->
-
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
-            <span class="button black xlarge display-topright">×</span>
-            <div class="modal-content animate-zoom center transparent padding-64">
-                <img id="img01" class="image">
-                <p id="caption"></p>
-            </div>
-        </div>
-
-        <!-- About section -->
-        <div class="container dark-grey center text-light-grey padding-32 panel" id="about">
-            <h4><b>About Me</b></h4>
-            <img src="assets/images/Christian.jpg" alt="Me" class="image padding-32" width="250" height="250">
-            <div class="content justify" style="max-width:600px">
-                <h4>My Name</h4>
-                <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p>mail: iamchristianpak@gmail.com</p>
-                <p>tel: +1 (732)-908-6433</p>
-                <hr class="opacity">
-                <h4 class="padding-16">Technical Skills</h4>
-                <p class="wide">Photography</p>
-                <div class="white">
-                    <div class="container padding-small center grey" style="width:95%">95%</div>
-                </div>
-                <p class="wide">Web Design</p>
-                <div class="white">
-                    <div class="container padding-small center grey" style="width:85%">85%</div>
-                </div>
-                <p class="wide">Photoshop</p>
-                <div class="white">
-                    <div class="container padding-small center grey" style="width:80%">80%</div>
-                </div>
-                <p><button class="button light-grey padding-large margin-top margin-bottom">Download
-                        Resume</button></p>
-                <hr class="opacity">
-
-                <h4 class="padding-16">How much I charge</h4>
-                <div class="row-padding" style="margin:0 -16px">
-                    <div class="half margin-bottom">
-                        <ul class="ul white center opacity hover-opacity-off">
-                            <li class="black xlarge padding-32">Basic</li>
-                            <li class="padding-16">Web Design</li>
-                            <li class="padding-16">Photography</li>
-                            <li class="padding-16">5GB Storage</li>
-                            <li class="padding-16">Mail Support</li>
-                            <li class="padding-16">
-                                <h2>$ 10</h2>
-                                <span class="opacity">per month</span>
-                            </li>
-                            <li class="light-grey padding-24">
-                                <button class="button white padding-large">Sign Up</button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="half">
-                        <ul class="ul white center opacity hover-opacity-off">
-                            <li class="black xlarge padding-32">Pro</li>
-                            <li class="padding-16">Web Design</li>
-                            <li class="padding-16">Photography</li>
-                            <li class="padding-16">50GB Storage</li>
-                            <li class="padding-16">Endless Support</li>
-                            <li class="padding-16">
-                                <h2>$ 25</h2>
-                                <span class="opacity">per month</span>
-                            </li>
-                            <li class="light-grey padding-24">
-                                <button class="button white padding-large">Sign Up</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact section -->
-        <div class="container light-grey padding-32 padding-large" id="contact">
-            <div class="content" style="max-width:600px">
-                <h4 class="center"><b>Contact Me</b></h4>
-                <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting
-                    new people!</p>
-                <form action="/action_page.php" target="_blank">
-                    <div class="section">
-                        <label>Name</label>
-                        <input class="input border" type="text" name="Name" required>
-                    </div>
-                    <div class="section">
-                        <label>Email</label>
-                        <input class="input border" type="text" name="Email" required>
-                    </div>
-                    <div class="section">
-                        <label>Message</label>
-                        <input class="input border" type="text" name="Message" required>
-                    </div>
-                    <button type="submit" class="button block black margin-bottom">Send Message</button>
-                </form>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="container padding-32 grey">
-            <div class="row-padding">
-                <div class="third">
-                    <h3>INFO</h3>
-                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-                        ultricies congue gravida diam non fringilla.</p>
-                </div>
-
-                <div class="third">
-                    <h3>BLOG POSTS</h3>
-                    <ul class="ul">
-                        <li class="padding-16 hover-black">
-                            <img src="/w3images/workshop.jpg" class="left margin-right" style="width:50px">
-                            <span class="large">Lorem</span><br>
-                            <span>Sed mattis nunc</span>
-                        </li>
-                        <li class="padding-16 hover-black">
-                            <img src="/w3images/gondol.jpg" class="left margin-right" style="width:50px">
-                            <span class="large">Ipsum</span><br>
-                            <span>Praes tinci sed</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="third">
-                    <h3>POPULAR TAGS</h3>
-                    <p>
-                        <span class="tag black margin-bottom">Travel</span> <span
-                            class="tag dark-grey small margin-bottom">New York</span> <span
-                            class="tag dark-grey small margin-bottom">London</span>
-                        <span class="tag dark-grey small margin-bottom">IKEA</span> <span
-                            class="tag dark-grey small margin-bottom">NORWAY</span> <span
-                            class="tag dark-grey small margin-bottom">DIY</span>
-                        <span class="tag dark-grey small margin-bottom">Ideas</span> <span
-                            class="tag dark-grey small margin-bottom">Baby</span> <span
-                            class="tag dark-grey small margin-bottom">Family</span>
-                        <span class="tag dark-grey small margin-bottom">News</span> <span
-                            class="tag dark-grey small margin-bottom">Clothing</span> <span
-                            class="tag dark-grey small margin-bottom">Shopping</span>
-                        <span class="tag dark-grey small margin-bottom">Sports</span> <span
-                            class="tag dark-grey small margin-bottom">Games</span>
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <script src="assets/javascript/portfolio.js"></script>
+    </div>
 </body>
 
 </html>

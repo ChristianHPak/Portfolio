@@ -8,22 +8,84 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="#"><li>Logo and Picture</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Experience</li></a>
-        <a href="#"><li>Projects</li></a>
-        <a href="#"><li>Skills</li></a>
-        <a href="#"><li>Education</li></a>
-        <a href="#"><li>Contact Me</li></a>
-    </div> 
+        <a href="#home">
+            <li>Home</li>
+        </a>
+        <a href="#about">
+            <li>About</li>
+        </a>
+        <a href="#projects">
+            <li>Projects</li>
+        </a>
+        <a href="#skills">
+            <li>Skills</li>
+        </a>
+        <a href="#education">
+            <li>Education</li>
+        </a>
+        <a href="#contact-me">
+            <li>Contact Me</li>
+        </a>
+    </div>
 
     <div id="main">
+        <div id="home" class="slot bottom-border">
+            <!-- print out name and title of yourself here -->
+            <div id="name-title">
+                <div>
+                    Christian Pak
+                </div>
+                <div>
+                    Full Stack Developer
+                </div>
+            </div> 
+        </div>
 
+        <div id="about" class="slot bottom-border">
+            <div id="about-me">
+                <p>
+                    My name is Christian Pak. I am a Full Stack Developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor malesuada nulla. Suspendisse potenti. Nullam maximus at neque a scelerisque. Pellentesque vel velit vel massa gravida scelerisque. Nam eu finibus nibh. Ut pharetra sapien turpis, sit amet porta arcu blandit vel. Nullam tempus libero nec lectus mattis gravida. Curabitur dolor elit, mollis sed lacus et, cursus euismod sem. Cras arcu metus, venenatis et malesuada ut, viverra at augue. Vivamus hendrerit convallis semper. Mauris id libero diam. Integer elementum libero nec dui egestas molestie. Vestibulum id lacus enim.
+                </p>
+                <p>
+                        Ut tincidunt libero fringilla ligula venenatis, ac semper urna tincidunt. Nulla at augue elit. Proin ut dictum metus. Nunc eu sem mi. Phasellus at tempor turpis. Curabitur lacinia tortor sit amet euismod sagittis. Nullam hendrerit nunc eget nisi dictum, id viverra tellus imperdiet. Vivamus auctor commodo justo, eget feugiat arcu pellentesque in. Nulla facilisi. Donec a egestas metus. Duis ultricies risus tortor. Cras porttitor elementum enim, quis fringilla nisl molestie eu.
+                </p>
+            </div>
+            
+        </div>
+
+        <!-- include image of project, links to deployed projects, and get pop up card describing what was utilized, ex. TrainScheduler, moment.js -->
+        <div id="projects" class="slot bottom-border">
+            <div class="fourth">
+                <img class="portfolio-image" src="assets/images/TrainScheduler.png" alt="">
+            </div>
+        </div>
+
+        <div id="skills" class="slot bottom-border">
+            <!-- coding languages learned -->
+            <div class="fifth">
+                <img class="skill-image" src="assets/images/html5.png" alt="">
+                <img class="skill-image" src="assets/images/css3.png" alt="">
+                <img class="skill-image" src="assets/images/BootstrapSquare.jpeg" alt="">
+                <img class="skill-image" src="assets/images/javascript.png" alt="">
+                <img class="skill-image" src="assets/images/jquery.png" alt="">
+            </div>
+            <div class="fifth">
+                <img class="skill-image" src="assets/images/nodejs.png" alt="">
+            </div>
+        </div>
+
+        <div id="education" class="slot bottom-border">
+            <!-- Denver University Trilogy Bootcamp -->
+        </div>
+
+        <div id="contact-me" class="slot">
+            <!-- input box and email, telephone, and location -->
+        </div>
     </div>
 </body>
 

@@ -1,16 +1,67 @@
 /* The sidenav */
 .sidenav {
     height: 100%;
-    width: 20em;
+    width: 12em;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: black;
     overflow-x: hidden;
-  }
-  
-  /* Page content */
-  #main {
-    margin-left: 20em; /* Same as the width of the sidenav */
-  }
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    align-self: center;
+    padding: .75em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* actual information */
+#main {
+    margin-left: 12em;
+}
+
+.slot {
+    height: 100vh;
+}
+
+.fifth{
+    width: 100%;
+    height: 15em;
+    margin-top: .3em;
+}
+
+.skill-image{
+    width: 19.5%;
+    margin-left: .15em;
+    height: 100%;
+}
+
+#home{
+    display: grid;
+    grid-template-columns: 24em auto 24em;
+    grid-template-rows: 15em auto 15em;
+    background-image: url('https://media.giphy.com/media/xT8qAX1gy0BmzOXdg4/giphy.gif');
+    background-size: cover;
+}
+
+#name-title{
+    color: white;
+    font-size: 3em;
+    text-align: center
+}
+
+.portfolio-image{
+    width: 15em;
+}

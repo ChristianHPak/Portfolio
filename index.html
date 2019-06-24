@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0eb0065a69.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfolio</title>
 </head>
@@ -35,6 +36,7 @@
 
     <div id="main">
         <div id="home" class="slot bottom-border">
+            <div class="section-header"></div>
             <!-- print out name and title of yourself here -->
             <div id="name-title">
                 <div>
@@ -43,23 +45,35 @@
                 <div>
                     Full Stack Developer
                 </div>
-            </div> 
+            </div>
         </div>
 
         <div id="about" class="slot bottom-border">
+            <div class="section-header"></div>
             <div id="about-me">
                 <p>
-                    My name is Christian Pak. I am a Full Stack Developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor malesuada nulla. Suspendisse potenti. Nullam maximus at neque a scelerisque. Pellentesque vel velit vel massa gravida scelerisque. Nam eu finibus nibh. Ut pharetra sapien turpis, sit amet porta arcu blandit vel. Nullam tempus libero nec lectus mattis gravida. Curabitur dolor elit, mollis sed lacus et, cursus euismod sem. Cras arcu metus, venenatis et malesuada ut, viverra at augue. Vivamus hendrerit convallis semper. Mauris id libero diam. Integer elementum libero nec dui egestas molestie. Vestibulum id lacus enim.
+                    My name is Christian Pak. I am a Full Stack Developer. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Mauris auctor malesuada nulla. Suspendisse potenti. Nullam maximus at neque a
+                    scelerisque. Pellentesque vel velit vel massa gravida scelerisque. Nam eu finibus nibh. Ut pharetra
+                    sapien turpis, sit amet porta arcu blandit vel. Nullam tempus libero nec lectus mattis gravida.
+                    Curabitur dolor elit, mollis sed lacus et, cursus euismod sem. Cras arcu metus, venenatis et
+                    malesuada ut, viverra at augue. Vivamus hendrerit convallis semper. Mauris id libero diam. Integer
+                    elementum libero nec dui egestas molestie. Vestibulum id lacus enim.
                 </p>
                 <p>
-                    Ut tincidunt libero fringilla ligula venenatis, ac semper urna tincidunt. Nulla at augue elit. Proin ut dictum metus. Nunc eu sem mi. Phasellus at tempor turpis. Curabitur lacinia tortor sit amet euismod sagittis. Nullam hendrerit nunc eget nisi dictum, id viverra tellus imperdiet. Vivamus auctor commodo justo, eget feugiat arcu pellentesque in. Nulla facilisi. Donec a egestas metus. Duis ultricies risus tortor. Cras porttitor elementum enim, quis fringilla nisl molestie eu.
+                    Ut tincidunt libero fringilla ligula venenatis, ac semper urna tincidunt. Nulla at augue elit. Proin
+                    ut dictum metus. Nunc eu sem mi. Phasellus at tempor turpis. Curabitur lacinia tortor sit amet
+                    euismod sagittis. Nullam hendrerit nunc eget nisi dictum, id viverra tellus imperdiet. Vivamus
+                    auctor commodo justo, eget feugiat arcu pellentesque in. Nulla facilisi. Donec a egestas metus. Duis
+                    ultricies risus tortor. Cras porttitor elementum enim, quis fringilla nisl molestie eu.
                 </p>
             </div>
-            
+
         </div>
 
         <!-- include image of project, links to deployed projects, and get pop up card describing what was utilized, ex. TrainScheduler, moment.js -->
         <div id="projects" class="slot bottom-border">
+            <div class="section-header"></div>
             <div class="project-lang">
                 <img class="portfolio-image" src="assets/images/TrainScheduler.png" alt="">
                 <img class="portfolio-image" src="assets/images/GroupProject1.png" alt="">
@@ -68,30 +82,87 @@
                 <img class="portfolio-image" src="assets/images/TriviaGame.png" alt="">
                 <img class="portfolio-image" src="assets/images/CrystalCollector.png" alt="">
             </div>
-        </div>
-
-        <div id="skills" class="slot bottom-border">
-            <!-- coding languages learned -->
             <div class="project-lang">
-                <img class="skill-image" src="assets/images/html5.png" alt="">
-                <img class="skill-image" src="assets/images/css3.png" alt="">
-                <img class="skill-image" src="assets/images/BootstrapSquare.jpeg" alt="">
-                <img class="skill-image" src="assets/images/javascript.png" alt="">
-                <img class="skill-image" src="assets/images/jquery.png" alt="">
+                <div class="row p-2 mr-2 ml-2" style="border-top: 2px solid gray;">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <a href="https://github.com/ChristianHPak/TrainScheduler"><img
+                                    src="assets/images/TrainScheduler.png" class="card-img-top" alt="photo"></a>
+                            <div class="card-body"
+                                style="position: absolute; padding: 0px; top: 150px; background:white; border: 1px solid black;">
+                                <p class="card-text">Train Scheduler</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">This activity was a group project including 4 apis, a database, and
+                                    the use of some bootstrap.</p>
+                                <a href="https://github.com/claudiafalk0/BandSpot" class="card-link"
+                                    target="_blank">Github</a>
+                                <a href="https://claudiafalk0.github.io/BandSpot/" class="card-link"
+                                    target="_blank">Deployed Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/GroupProject1.png" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">This activity was a group project including 4 apis, a database, and
+                                    the use of some bootstrap.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Four Apis</li>
+                                <li class="list-group-item">Firebase Database</li>
+                                <li class="list-group-item">Bootstrap</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://github.com/claudiafalk0/BandSpot" class="card-link">Card link</a>
+                                <a href="https://claudiafalk0.github.io/BandSpot/" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="fifth">
-                <img class="skill-image" src="assets/images/nodejs.png" alt="">
+
+            <div id="skills" class="slot bottom-border">
+                <div class="section-header"></div>
+                <!-- coding languages learned -->
+                <div class="project-lang">
+                    <img class="skill-image" src="assets/images/html5.png" alt="">
+                    <img class="skill-image" src="assets/images/css3.png" alt="">
+                    <img class="skill-image" src="assets/images/BootstrapSquare.jpeg" alt="">
+                    <img class="skill-image" src="assets/images/javascript.png" alt="">
+                    <img class="skill-image" src="assets/images/jquery.png" alt="">
+                </div>
+                <div class="fifth">
+                    <img class="skill-image" src="assets/images/nodejs.png" alt="">
+                </div>
+            </div>
+
+            <div id="education" class="slot bottom-border">
+                <!-- Denver University Trilogy Bootcamp -->
+            </div>
+
+            <div id="contact-me" class="slot">
+                <div class="section-header"></div>
+                <div id="contacting">
+                    <div>
+                        <i class="far fa-envelope"><a href="iamchristianpak@gmail.com"></a></i>
+                    </div>
+                    <div>
+                        <i class="fab fa-linkedin"><a href="https://www.linkedin.com/in/christian-pak-010979168/"></a></i>
+                    </div>
+                    <div>
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div id="education" class="slot bottom-border">
-            <!-- Denver University Trilogy Bootcamp -->
-        </div>
-
-        <div id="contact-me" class="slot">
-            <!-- input box and email, telephone, and location -->
-        </div>
-    </div>
 </body>
 
 </html>

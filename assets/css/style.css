@@ -1,7 +1,7 @@
 /* The sidenav */
 .sidenav {
     height: 100%;
-    width: 12em;
+    width: 10em;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -29,11 +29,11 @@ a:hover {
 
 /* actual information */
 #main {
-    margin-left: 12em;
+    margin-left: 10em;
 }
 
 .slot {
-    height: 100vh;
+    height: auto;
 }
 
 #home{
@@ -56,7 +56,7 @@ a:hover {
 
 .project-lang{
     width: 100%;
-    height: 15em;
+    height: auto;
     margin-top: .3em;
 }
 
@@ -64,4 +64,19 @@ a:hover {
     width: 19.5%;
     margin-left: .15em;
     height: 100%;
+}
+
+.card-img{
+    width: auto;
+    height: 10em;
+}
+
+.card{
+    margin: auto;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 2;
 }

@@ -4,13 +4,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* header {
-    background-color:orange;
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
-    height:5em;
-  } */
-
 .container {
     width: 10em;
     height: 100%;
@@ -24,8 +17,8 @@ body {
 
 .pulse-button {
     position: relative;
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
     border: none;
     box-shadow: 0 0 0 0 rgba(207, 124, 0, 0.7);
     border-radius: 50%;

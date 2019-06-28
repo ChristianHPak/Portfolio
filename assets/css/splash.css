@@ -40,11 +40,11 @@ body {
     -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
     animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
     overflow: hidden;
-    -webkit-transition:all 0.2s ease-in;
-    -moz-transition:all 0.2s ease-in;
-    -ms-transition:all 0.2s ease-in;
-    -o-transition:all 0.2s ease-in;
-    transition:all 0.2s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 .pulse-button:hover {
@@ -141,16 +141,6 @@ button:focus {
     -ms-animation: animwelcome 2.5s 1 ease-in;
     animation: animwelcome 2.5s 1 ease-in;
 }
-
-/* .txt_user {
-    font-size: 22px;
-    font-weight: 100;
-    color: #e84c3d;
-    -webkit-animation: animuser 1.9s 1 ease-in;
-    -moz-animation: animuser 1.9s 1 ease-in;
-    -ms-animation: animuser 1.9s 1 ease-in;
-    animation: animuser 1.9s 1 ease-in;
-} */
 
 .first_circle {
     width: 25em;
@@ -444,10 +434,20 @@ button:focus {
     width: 100%;
 }
 
-button:hover{
-    width:20em;
-    height:2.5em;
-    border-radius:2em;
-    background-color:#97bf0d;
+button:hover {
+    width: 20em;
+    height: 2.5em;
+    border-radius: 2em;
+    background-color: #97bf0d;
     margin-left: -6em;
+
+}
+
+.text {
+    display: none;
+}
+
+.pulse-button:hover .text {
+    display: inline;
+    overflow: hidden;
 }

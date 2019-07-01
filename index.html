@@ -45,34 +45,36 @@
         <div id="about" class="slot bottom-border">
             <div class="section-header">About</div>
             <div id="about-me">
-                <p>
-                    My name is Christian Pak. I am a Full Stack Developer. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Mauris auctor malesuada nulla. Suspendisse potenti. Nullam maximus at neque a
-                    scelerisque. Pellentesque vel velit vel massa gravida scelerisque. Nam eu finibus nibh. Ut pharetra
-                    sapien turpis, sit amet porta arcu blandit vel. Nullam tempus libero nec lectus mattis gravida.
-                    Curabitur dolor elit, mollis sed lacus et, cursus euismod sem. Cras arcu metus, venenatis et
-                    malesuada ut, viverra at augue. Vivamus hendrerit convallis semper. Mauris id libero diam. Integer
-                    elementum libero nec dui egestas molestie. Vestibulum id lacus enim.
-                </p>
-                <p>
-                    Ut tincidunt libero fringilla ligula venenatis, ac semper urna tincidunt. Nulla at augue elit. Proin
-                    ut dictum metus. Nunc eu sem mi. Phasellus at tempor turpis. Curabitur lacinia tortor sit amet
-                    euismod sagittis. Nullam hendrerit nunc eget nisi dictum, id viverra tellus imperdiet. Vivamus
-                    auctor commodo justo, eget feugiat arcu pellentesque in. Nulla facilisi. Donec a egestas metus. Duis
-                    ultricies risus tortor. Cras porttitor elementum enim, quis fringilla nisl molestie eu.
-                </p>
+                <div class="eighty">
+                    <p>
+                        My name is Christian Pak. I am a Full Stack Developer. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Mauris auctor malesuada nulla. Suspendisse potenti. Nullam maximus at neque a
+                        scelerisque. Pellentesque vel velit vel massa gravida scelerisque. Nam eu finibus nibh. Ut pharetra
+                        sapien turpis, sit amet porta arcu blandit vel. Nullam tempus libero nec lectus mattis gravida.
+                        Curabitur dolor elit, mollis sed lacus et, cursus euismod sem. Cras arcu metus, venenatis et
+                        malesuada ut, viverra at augue. Vivamus hendrerit convallis semper. Mauris id libero diam. Integer
+                        elementum libero nec dui egestas molestie. Vestibulum id lacus enim.
+                    </p>
+                    <p>
+                        Ut tincidunt libero fringilla ligula venenatis, ac semper urna tincidunt. Nulla at augue elit. Proin
+                        ut dictum metus. Nunc eu sem mi. Phasellus at tempor turpis. Curabitur lacinia tortor sit amet
+                        euismod sagittis. Nullam hendrerit nunc eget nisi dictum, id viverra tellus imperdiet. Vivamus
+                        auctor commodo justo, eget feugiat arcu pellentesque in. Nulla facilisi. Donec a egestas metus. Duis
+                        ultricies risus tortor. Cras porttitor elementum enim, quis fringilla nisl molestie eu.
+                    </p>
+                </div>
             </div>
 
         </div>
 
         <!-- include image of project, links to deployed projects, and get pop up card describing what was utilized, ex. TrainScheduler, moment.js -->
-        <div id="projects" class="slot bottom-border row" style="background-color: orange;">
+        <div id="projects" class="slot bottom-border row">
             <div class="section-header">Projects</div>
             <div class="project-lang row">
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top card-img" src="assets/images/GroupProject1.png" alt="Project 1">
-                        <div class="card-body">
+                        <img class="card-img-top card-img" src="assets/images/GroupProject1.png" alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="card-body collapse" id="collapseExample">
                             <h5 class="card-title">Project 1</h5>
                             <p class="card-text">This activity was a group project including 4 apis, a database, and
                                 the use of some bootstrap.</p>
@@ -221,7 +223,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- 
+
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top card-img" src="assets/images/CrystalCollector.png" alt="Project 1">
@@ -262,44 +264,49 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
-                <div id="skills" class="slot bottom-border row">
-                    <div class="section-header"></div>
-                    <div class="project-lang row">
-                        <div class="col-lg">
-                            <img class="skill-image" src="assets/images/html5.png" alt="">
-                            <img class="skill-image" src="assets/images/css4.png" alt="">
-                            <img class="skill-image" src="assets/images/BootstrapSquare.jpeg" alt="">
-                            <img class="skill-image" src="assets/images/javascript.png" alt="">
-                            <img class="skill-image" src="assets/images/jquery.png" alt="">
-                            <img class="skill-image" src="assets/images/nodejs.png" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div id="education" class="slot bottom-border">
-                    <div class="section-header">Education</div>
-                </div>
-
-                <div id="contact-me" class="slot">
-                    <div class="section-header">Contact Me</div>
-                    <div id="contacting">
-                        <div>
-                            <i class="far fa-envelope"></i><a href="iamchristianpak@gmail.com">Email:
-                                iamchristianpak@gmail.com</a>
-                        </div>
-                        <div>
-                            <i class="fab fa-linkedin"></i><a
-                                href="https://www.linkedin.com/in/christian-pak-010979168/">LinkedIn</a>
-                        </div>
-                        <div>
-                            <i class="fab fa-github"></i><a href="https://github.com/ChristianHPak">Github</a>
-                        </div>
-                    </div>
+        <div id="skills" class="slot bottom-border row">
+            <div class="section-header">Languages</div>
+            <div class="project-lang row">
+                <div class="col-lg">
+                    <img class="skill-image" src="assets/images/html5.png" alt="">
+                    <img class="skill-image" src="assets/images/css4.png" alt="">
+                    <img class="skill-image" src="assets/images/BootstrapSquare.jpeg" alt="">
+                    <img class="skill-image" src="assets/images/javascript.png" alt="">
+                    <img class="skill-image" src="assets/images/jquery.png" alt="">
+                    <img class="skill-image" src="assets/images/nodejs.png" alt="">
                 </div>
             </div>
         </div>
+
+        <div id="education" class="slot bottom-border">
+            <div class="section-header">Education</div>
+            <div class="card">
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-me" class="slot">
+            <div class="section-header">Contact Me</div>
+            <div id="contacting">
+                <div>
+                    <i class="far fa-envelope"></i><a href="iamchristianpak@gmail.com">Email:
+                        iamchristianpak@gmail.com</a>
+                </div>
+                <div>
+                    <i class="fab fa-linkedin"></i><a
+                        href="https://www.linkedin.com/in/christian-pak-010979168/">LinkedIn</a>
+                </div>
+                <div>
+                    <i class="fab fa-github"></i><a href="https://github.com/ChristianHPak">Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>

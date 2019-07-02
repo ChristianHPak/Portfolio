@@ -433,7 +433,6 @@ button:hover {
     border-radius: 2em;
     background-color: #97bf0d;
     margin-left: -6em;
-
 }
 
 .text {
@@ -443,4 +442,9 @@ button:hover {
 .pulse-button:hover .text {
     display: inline;
     overflow: hidden;
+}
+
+a{
+    text-decoration: none !important;
+    list-style-type: none;
 }

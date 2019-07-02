@@ -42,6 +42,7 @@ a:hover {
     display: grid;
     grid-template-columns: 24em auto 24em;
     grid-template-rows: 15em auto 15em;
+    height: 80vh;
     background-image: url('https://media.giphy.com/media/xT8qAX1gy0BmzOXdg4/giphy.gif');
     background-size: cover;
 }
@@ -104,4 +105,8 @@ li:hover {
     background: white;
     text-align: center;
     margin: 1em auto;
+}
+
+.text_padding{
+    padding: 1em;
 }

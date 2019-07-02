@@ -1,7 +1,7 @@
 /* The sidenav */
 .sidenav {
     height: 100%;
-    width: 10em;
+    width: 12em;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -29,8 +29,8 @@ a:hover {
 
 /* actual information */
 #main {
-    margin-left: 10em;
-    background-image: url("https://etc.usf.edu/presentations/backgrounds/grid/grid_04/1304m.gif")
+    margin-left: 12em;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUL0ImU8-vS0NnQqlIqu_Po1Tfcyl0Uq0CfcjbSSYF5HZycjJ8");
 }
 
 .slot {
@@ -75,7 +75,7 @@ a:hover {
 }
 
 .card {
-    margin: auto;
+    margin: 1em auto;
 }
 
 .row {
@@ -86,9 +86,12 @@ a:hover {
 .section-header {
     font-size: 3em;
     text-align: center;
+    align-self: center;
     width: 100%;
-    height: 2em;
-    background-color: black;
+    height: 1.75em;
+    background-color: #4aaaa5;
+    letter-spacing: .23em;
+    font-family: 'DM Serif Display', serif;
 }
 
 .bottom-border {
@@ -100,13 +103,46 @@ li:hover {
     color: white;
 }
 
-.eighty{
+.eighty {
     width: 80%;
     background: white;
     text-align: center;
     margin: 1em auto;
 }
 
-.text_padding{
+.text_padding {
     padding: 1em;
+}
+
+#ac-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .6);
+    z-index: 1001;
+    display: block;
+}
+
+#popup {
+    width: 20px;
+    height: 17px;
+    background: #FFFFFF;
+    border: 5px solid #000;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    box-shadow: #64686e 0px 0px 3px 3px;
+    -moz-box-shadow: #64686e 0px 0px 3px 3px;
+    -webkit-box-shadow: #64686e 0px 0px 3px 3px;
+    position: relative;
+    margin: 10% auto;
+}
+
+#instructions{
+    margin-left: 40%;
+    margin-top: .5em;
+    margin-bottom: -1em;
+    opacity: .7;
 }

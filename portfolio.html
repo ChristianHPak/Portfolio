@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0eb0065a69.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfolio</title>
 </head>
@@ -24,7 +27,7 @@
             <li><i class="fas fa-tasks"></i> Projects</li>
         </a>
         <a href="#skills">
-            <li>Skills</li>
+            <li><i class="fas fa-code"></i> Skills</li>
         </a>
         <a href="#education">
             <li><i class="fas fa-user-graduate"></i> Education</li>
@@ -69,21 +72,24 @@
         </div>
 
         <!-- include image of project, links to deployed projects, and get pop up card describing what was utilized, ex. TrainScheduler, moment.js -->
-        <div id="projects" class="slot bottom-border row">
-            <div class="section-header">Projects</div>
+        <div class="section-header">Projects</div>
+        <div id="projects" class="slot bottom-border row eighty">
+            <small id="instructions">click on photos for more information</small>
             <div class="project-lang row">
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top card-img" src="assets/images/GroupProject1.png" alt="Project 1"
                             class="btn btn-primary" type="button" data-toggle="collapse" data-target="#project1"
-                            aria-expanded="false" aria-controls="collapseExample">
+                            aria-expanded="false" aria-controls="collapse">
+                        <div class="card-body">
+                            <h5 class="card-title">AlbumSpot</h5>
+                            <p class="card-text">A website which would allow the user to search by artist and display
+                                the artists album, play a snippet of the songs in that album, and by using the users IP
+                                address find events for that artist in their area. </p>
+                        </div>
                         <div class="collapse" id="project1">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 1</h5>
-                                <p class="card-text">This activity was a group project including 4 apis, a database, and
-                                    the use of some bootstrap.</p>
-                            </div>
                             <ul class="list-group list-group-flush">
+                                <h6>Implemented</h6>
                                 <li class="list-group-item">Four Apis</li>
                                 <li class="list-group-item">Firebase Database</li>
                                 <li class="list-group-item">Bootstrap</li>
@@ -101,97 +107,23 @@
                         <img class="card-img-top card-img"
                             src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/TrainScheduler.png?raw=true"
                             alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
-                            data-target="#train" aria-expanded="false" aria-controls="collapseExample">
+                            data-target="#train" aria-expanded="false" aria-controls="collapse">
+                        <div class="card-body">
+                            <h5 class="card-title">Train Scheduler</h5>
+                            <p class="card-text">A train schedule application that incorporates Firebase to host arrival
+                                and departure data</p>
+                        </div>
                         <div class="collapse" id="train">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 1</h5>
-                                <p class="card-text">This activity was a group project including 4 apis, a database, and
-                                    the use of some bootstrap.</p>
-                            </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Four Apis</li>
+                                <h6>Implemented</h6>
+                                <li class="list-group-item">moment.js</li>
                                 <li class="list-group-item">Firebase Database</li>
                                 <li class="list-group-item">Bootstrap</li>
                             </ul>
                             <div class="card-body">
                                 <a href="https://github.com/ChristianHPak/TrainScheduler" class="card-link">Github</a>
-                                <a href="https://claudiafalk0.github.io/BandSpot/" class="card-link">Deployment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top card-img"
-                            src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/CrystalCollector.png?raw=true"
-                            alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
-                            data-target="#crystal" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="collapse" id="crystal">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 1</h5>
-                                <p class="card-text">This activity was a group project including 4 apis, a database, and
-                                    the use of some bootstrap.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Four Apis</li>
-                                <li class="list-group-item">Firebase Database</li>
-                                <li class="list-group-item">Bootstrap</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="https://github.com/ChristianHPak/Unit-4-Game" class="card-link">Github</a>
-                                <a href="https://claudiafalk0.github.io/BandSpot/" class="card-link">Deployment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-lang row"">
-                    <div class=" col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top card-img"
-                            src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/TriviaGame.png?raw=true"
-                            alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
-                            data-target="#trivia" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="collapse" id="trivia">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 1</h5>
-                                <p class="card-text">This activity was a group project including 4 apis, a database, and
-                                    the use of some bootstrap.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Four Apis</li>
-                                <li class="list-group-item">Firebase Database</li>
-                                <li class="list-group-item">Bootstrap</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="https://github.com/ChristianHPak/TriviaGame" class="card-link">Github</a>
-                                <a href="https://claudiafalk0.github.io/BandSpot/" class="card-link">Deployment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top card-img"
-                            src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/PsychicGame.png?raw=true"
-                            alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
-                            data-target="#psychic" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="collapse" id="psychic">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 1</h5>
-                                <p class="card-text">This activity was a group project including 4 apis, a database, and
-                                    the use of some bootstrap.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Four Apis</li>
-                                <li class="list-group-item">Firebase Database</li>
-                                <li class="list-group-item">Bootstrap</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="https://github.com/ChristianHPak/Psychic-Game" class="card-link">Github</a>
-                                <a href="https://claudiafalk0.github.io/BandSpot/" class="card-link">Deployment</a>
+                                <a href="https://christianhpak.github.io/TrainScheduler/"
+                                    class="card-link">Deployment</a>
                             </div>
                         </div>
                     </div>
@@ -200,71 +132,20 @@
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top card-img"
-                            src="https://github.com/ChristianHPak/LiriBot/blob/master/images/Screen%20Shot%202019-06-25%20at%2010.02.59.png?raw=true"
-                            alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
-                            data-target="#liriBot" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="collapse" id="liriBot">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 1</h5>
-                                <p class="card-text">This activity was a group project including 4 apis, a database, and
-                                    the use of some bootstrap.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Four Apis</li>
-                                <li class="list-group-item">Firebase Database</li>
-                                <li class="list-group-item">Bootstrap</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="https://github.com/ChristianHPak/LiriBot" class="card-link">Github</a>
-                                <a href="https://claudiafalk0.github.io/BandSpot/" class="card-link">Deployment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-lang row">
-                <div class="col-lg-6">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top card-img"
-                            src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/GifTastic.png?raw=true"
-                            alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
-                            data-target="#gifTastic" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="collapse" id="gifTastic">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 1</h5>
-                                <p class="card-text">This activity was a group project including 4 apis, a database, and
-                                    the use of some bootstrap.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Four Apis</li>
-                                <li class="list-group-item">Firebase Database</li>
-                                <li class="list-group-item">Bootstrap</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="https://github.com/ChristianHPak/GifTastic" class="card-link">Github</a>
-                                <a href="https://claudiafalk0.github.io/BandSpot/" class="card-link">Deployment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top card-img"
                             src="https://github.com/ChristianHPak/bamazon/blob/master/images/Screen%20Shot%202019-07-02%20at%2009.29.06.png?raw=true"
                             alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
-                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="collapse" id="collapseExample">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 1</h5>
-                                <p class="card-text">This activity was a group project including 4 apis, a database, and
-                                    the use of some bootstrap.</p>
-                            </div>
+                            data-target="#bamazon" aria-expanded="false" aria-controls="collapse">
+                        <div class="card-body">
+                            <h5 class="card-title">BAmazon</h5>
+                            <p class="card-text">A Node.js & MySQL command line Amazon-like storefront app that takes in
+                                a customers' order and depletes stock from the store Inventory.</p>
+                        </div>
+                        <div class="collapse" id="bamazon">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Four Apis</li>
-                                <li class="list-group-item">Firebase Database</li>
-                                <li class="list-group-item">Bootstrap</li>
+                                <h6>Implemented</h6>
+                                <li class="list-group-item">mysql</li>
+                                <li class="list-group-item">Three npm packages</li>
+                                <li class="list-group-item">node.js</li>
                             </ul>
                             <div class="card-body">
                                 <a href="https://github.com/ChristianHPak/bamazon" class="card-link">Github</a>
@@ -274,11 +155,145 @@
                     </div>
                 </div>
 
-                <!-- <div class="col-lg-4">
+                <div class="project-lang row">
+                    <div class=" col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top card-img"
+                                src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/TriviaGame.png?raw=true"
+                                alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
+                                data-target="#trivia" aria-expanded="false" aria-controls="collapse">
+                            <div class="card-body">
+                                <h5 class="card-title">Trivia Game</h5>
+                                <p class="card-text">Trivia game using JavaScript for the logic and jQuery to manipulate
+                                    HTML.</p>
+                            </div>
+                            <div class="collapse" id="trivia">
+                                <ul class="list-group list-group-flush">
+                                    <h6>Implemented</h6>
+                                    <li class="list-group-item">Javascript</li>
+                                    <li class="list-group-item">JQuery</li>
+                                    <li class="list-group-item">Bootstrap</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="https://github.com/ChristianHPak/TriviaGame" class="card-link">Github</a>
+                                    <a href="https://christianhpak.github.io/TriviaGame/"
+                                        class="card-link">Deployment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top card-img"
+                                src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/PsychicGame.png?raw=true"
+                                alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
+                                data-target="#psychic" aria-expanded="false" aria-controls="collapse">
+                            <div class="card-body">
+                                <h5 class="card-title">Psychic Game</h5>
+                                <p class="card-text">A simple JavaScript game that allows you to guess the letter the
+                                    computer chooses.</p>
+                            </div>
+                            <div class="collapse" id="psychic">
+                                <ul class="list-group list-group-flush">
+                                    <h6>Implemented</h6>
+                                    <li class="list-group-item">Javascript</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="https://github.com/ChristianHPak/Psychic-Game" class="card-link">Github</a>
+                                    <a href="https://christianhpak.github.io/Psychic-Game/"
+                                        class="card-link">Deployment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top card-img"
+                                src="https://github.com/ChristianHPak/LiriBot/blob/master/images/Screen%20Shot%202019-06-25%20at%2010.02.59.png?raw=true"
+                                alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
+                                data-target="#liriBot" aria-expanded="false" aria-controls="collapse">
+                            <div class="card-body">
+                                <h5 class="card-title">LiriBot</h5>
+                                <p class="card-text">LIRI is like iPhone's SIRI. However, while SIRI is a Speech
+                                    Interpretation and Recognition Interface, LIRI is a Language Interpretation and
+                                    Recognition Interface.</p>
+                            </div>
+                            <div class="collapse" id="liriBot">
+                                <ul class="list-group list-group-flush">
+                                    <h6>Implemented</h6>
+                                    <li class="list-group-item">Three Apis</li>
+                                    <li class="list-group-item">Five npm packages</li>
+                                    <li class="list-group-item">Javascript</li>
+                                    <li class="list-group-item">Node.js</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="https://github.com/ChristianHPak/LiriBot" class="card-link">Github</a>
+                                    <a href="https://github.com/ChristianHPak/LiriBot" class="card-link">Deployment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-lang row">
+                    <div class="col-lg">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top card-img"
+                                src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/GifTastic.png?raw=true"
+                                alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
+                                data-target="#gifTastic" aria-expanded="false" aria-controls="collapse">
+                            <div class="card-body">
+                                <h5 class="card-title">GifTastic</h5>
+                                <p class="card-text">The use of the GIPHY API to make a dynamic web page that populates with gifs of your choice.</p>
+                            </div>
+                            <div class="collapse" id="gifTastic">
+                                <ul class="list-group list-group-flush">
+                                    <h6>Implemented</h6>
+                                    <li class="list-group-item">Giphy Apis</li>
+                                    <li class="list-group-item">JSON</li>
+                                    <li class="list-group-item">Ajax</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="https://github.com/ChristianHPak/GifTastic" class="card-link">Github</a>
+                                    <a href="https://christianhpak.github.io/GifTastic/" class="card-link">Deployment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top card-img"
+                                src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/CrystalCollector.png?raw=true"
+                                alt="Project 1" class="btn btn-primary" type="button" data-toggle="collapse"
+                                data-target="#crystal" aria-expanded="false" aria-controls="collapse">
+                            <div class="card-body">
+                                <h5 class="card-title">Crystal Collector</h5>
+                                <p class="card-text">A fun and interactive game for web browsers.</p>
+                            </div>
+                            <div class="collapse" id="crystal">
+                                <ul class="list-group list-group-flush" style="z-index: 1;">
+                                    <h6>Implemented</h6>
+                                    <li class="list-group-item">Bootstrap</li>
+                                    <li class="list-group-item">Javascript</li>
+                                    <li class="list-group-item">JQuery</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="https://github.com/ChristianHPak/Unit-4-Game" class="card-link">Github</a>
+                                    <a href="https://christianhpak.github.io/Unit-4-Game/" class="card-link">Deployment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top card-img" src="assets/images/TrainScheduler.png" alt="Project 1"
                             class="btn btn-primary" type="button" data-toggle="collapse" data-target="#nexthomework"
-                            aria-expanded="false" aria-controls="collapseExample">
+                            aria-expanded="false" aria-controls="collapse">
                         <div class="collapse" id="nexthomework">
                             <div class="card-body">
                                 <h5 class="card-title">Project 1</h5>
@@ -297,52 +312,62 @@
                         </div>
                     </div>
                 </div> -->
+                </div>
             </div>
-        </div>
 
-        <div id="skills" class="slot bottom-border row">
             <div class="section-header">Languages</div>
-            <div class="project-lang row">
-                <div class="col-lg">
+            <div id="skills" class="slot bottom-border row eighty">
+                <div class="project-lang row">
+                    <div class="col-lg">
+                        <div>
+                            <img src="assets/images/react.png" alt="react">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header">Education</div>
+            <div id="education" class="slot bottom-border eighty">
+                <div class="card">
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header">Contact Me</div>
+            <div id="contact-me" class="slot eighty">
+                <div id="contacting">
                     <div>
-                        <img src="assets/images/react.png" alt="react">
+                        <i class="far fa-envelope"></i><a href="iamchristianpak@gmail.com"> Email:
+                            iamchristianpak@gmail.com</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-linkedin"></i><a
+                            href="https://www.linkedin.com/in/christian-pak-010979168/"> LinkedIn</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-github"></i><a href="https://github.com/ChristianHPak"> Github</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div id="education" class="slot bottom-border">
-            <div class="section-header">Education</div>
-            <div class="card">
-                <div class="card-body">
-                    This is some text within a card body.
-                </div>
-            </div>
-        </div>
-
-        <div id="contact-me" class="slot">
-            <div class="section-header">Contact Me</div>
-            <div id="contacting">
-                <div>
-                    <i class="far fa-envelope"></i><a href="iamchristianpak@gmail.com">Email:
-                        iamchristianpak@gmail.com</a>
-                </div>
-                <div>
-                    <i class="fab fa-linkedin"></i><a
-                        href="https://www.linkedin.com/in/christian-pak-010979168/">LinkedIn</a>
-                </div>
-                <div>
-                    <i class="fab fa-github"></i><a href="https://github.com/ChristianHPak">Github</a>
-                </div>
-            </div>
+    <div id="ac-wrapper" style='display:none'>
+        <div id="popup">
+            <center>
+                <h2>Popup Content Here</h2>
+                <input type="submit" name="submit" value="Submit" onClick="PopUp('hide')" />
+            </center>
         </div>
     </div>
-    </div>
+
     <script src="assets/javascript/portfolio.js"></script>
-    
+    <!-- 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+    </script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>

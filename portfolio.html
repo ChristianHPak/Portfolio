@@ -74,7 +74,6 @@
         <!-- include image of project, links to deployed projects, and get pop up card describing what was utilized, ex. TrainScheduler, moment.js -->
         <div class="section-header">Projects</div>
         <div id="projects" class="slot bottom-border row eighty">
-            <small id="instructions">click on photos for more information</small>
             <div class="project-lang row">
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
@@ -102,7 +101,38 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-responsive"
+                                src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/TrainScheduler.png?raw=true">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Train Scheduler</span>
+                            <button type="button" id="show" class="btn btn-custom pull-right" aria-label="Left Align">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </button>
+                        </div><!-- card content -->
+                        <div class="card-action">
+                            <a href="https://github.com/ChristianHPak/TrainScheduler" target="new_blank">Github</a>
+                            <a href="https://christianhpak.github.io/TrainScheduler/" target="new_blank">Deployment</a>
+                        </div><!-- card actions -->
+                        <div class="card-reveal">
+                            <span class="card-title">Information</span> <button type="button" class="close"
+                                data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <p>A train schedule application that incorporates Firebase to host arrival
+                                and departure data</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">moment.js</li>
+                                <li class="list-group-item">Firebase Database</li>
+                                <li class="list-group-item">Bootstrap</li>
+                            </ul>
+                        </div><!-- card reveal -->
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top card-img"
                             src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/TrainScheduler.png?raw=true"
@@ -127,7 +157,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
@@ -137,7 +167,8 @@
                             data-target="#bamazon" aria-expanded="false" aria-controls="collapse">
                         <div class="card-body">
                             <h5 class="card-title">BAmazon</h5>
-                            <p class="card-text">A Node.js & MySQL command line Amazon-like storefront app that takes in
+                            <p class="card-text">A Node.js & MySQL command line Amazon-like storefront app that
+                                takes in
                                 a customers' order and depletes stock from the store Inventory.</p>
                         </div>
                         <div class="collapse" id="bamazon">
@@ -164,7 +195,8 @@
                                 data-target="#trivia" aria-expanded="false" aria-controls="collapse">
                             <div class="card-body">
                                 <h5 class="card-title">Trivia Game</h5>
-                                <p class="card-text">Trivia game using JavaScript for the logic and jQuery to manipulate
+                                <p class="card-text">Trivia game using JavaScript for the logic and jQuery to
+                                    manipulate
                                     HTML.</p>
                             </div>
                             <div class="collapse" id="trivia">
@@ -191,7 +223,8 @@
                                 data-target="#psychic" aria-expanded="false" aria-controls="collapse">
                             <div class="card-body">
                                 <h5 class="card-title">Psychic Game</h5>
-                                <p class="card-text">A simple JavaScript game that allows you to guess the letter the
+                                <p class="card-text">A simple JavaScript game that allows you to guess the letter
+                                    the
                                     computer chooses.</p>
                             </div>
                             <div class="collapse" id="psychic">
@@ -246,7 +279,9 @@
                                 data-target="#gifTastic" aria-expanded="false" aria-controls="collapse">
                             <div class="card-body">
                                 <h5 class="card-title">GifTastic</h5>
-                                <p class="card-text">The use of the GIPHY API to make a dynamic web page that populates with gifs of your choice.</p>
+                                <p class="card-text">The use of the GIPHY API to make a dynamic web page that
+                                    populates
+                                    with gifs of your choice.</p>
                             </div>
                             <div class="collapse" id="gifTastic">
                                 <ul class="list-group list-group-flush">
@@ -257,7 +292,8 @@
                                 </ul>
                                 <div class="card-body">
                                     <a href="https://github.com/ChristianHPak/GifTastic" class="card-link">Github</a>
-                                    <a href="https://christianhpak.github.io/GifTastic/" class="card-link">Deployment</a>
+                                    <a href="https://christianhpak.github.io/GifTastic/"
+                                        class="card-link">Deployment</a>
                                 </div>
                             </div>
                         </div>
@@ -282,7 +318,8 @@
                                 </ul>
                                 <div class="card-body">
                                     <a href="https://github.com/ChristianHPak/Unit-4-Game" class="card-link">Github</a>
-                                    <a href="https://christianhpak.github.io/Unit-4-Game/" class="card-link">Deployment</a>
+                                    <a href="https://christianhpak.github.io/Unit-4-Game/"
+                                        class="card-link">Deployment</a>
                                 </div>
                             </div>
                         </div>
@@ -327,10 +364,22 @@
             </div>
 
             <div class="section-header">Education</div>
-            <div id="education" class="slot bottom-border eighty">
+            <div id="education" class="slot bottom-border eighty row">
                 <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <img src="assets/images/DU.png" alt="University of Denver" style="width: 2em;">
+                            University
+                            of Denver Trilogy
+                        </div>
+                    </div>
                     <div class="card-body">
-                        This is some text within a card body.
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                            </p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
+                                    Title</cite></footer>
+                        </blockquote>
                     </div>
                 </div>
             </div>
@@ -343,8 +392,8 @@
                             iamchristianpak@gmail.com</a>
                     </div>
                     <div>
-                        <i class="fab fa-linkedin"></i><a
-                            href="https://www.linkedin.com/in/christian-pak-010979168/"> LinkedIn</a>
+                        <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/christian-pak-010979168/">
+                            LinkedIn</a>
                     </div>
                     <div>
                         <i class="fab fa-github"></i><a href="https://github.com/ChristianHPak"> Github</a>

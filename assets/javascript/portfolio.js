@@ -6,8 +6,18 @@ function PopUp(hideOrshow) {
 //     setTimeout(function () {
 //         PopUp('show');
 //     }, 1500);
-// }
+// } 
 
 $("#popup_button").on("click", function() {
     $("#ac-wrapper").css("display", "none");
 })
+
+$(function(){
+    $('#show').on('click',function(){        
+        $('.card-reveal').slideToggle('slow');
+    });
+    
+    $('.card-reveal .close').on('click',function(){
+        $('.card-reveal').slideToggle('slow');
+    });
+});

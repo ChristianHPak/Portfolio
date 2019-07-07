@@ -212,17 +212,16 @@ li:hover {
 }
 
 .card .card-action a:hover {
-    color: #ffd8a6;
     text-decoration: none;
 }
 
 .card .card-reveal {
     padding: 20px;
     position: absolute;
-    background-color: #FFF;
+    background-color: white;
     width: 100%;
     overflow-y: auto;
-    /*top: 0;*/
+    top: 0;
     left: 0;
     bottom: 0;
     height: 100%;
@@ -236,11 +235,23 @@ li:hover {
 }
 
 .btn-custom {
-    background-color: transparent;
     font-size: 18px;
 }
 
 .img-responsive {
     width: 100%;
     height: 100%;
+}
+
+.project-name {
+    margin-top: 1em;
+}
+
+.close {
+    opacity: 1;
+    background: white;
+}
+
+li:hover {
+    color: black;
 }

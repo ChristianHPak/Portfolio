@@ -8,16 +8,14 @@ function PopUp(hideOrshow) {
 //     }, 1500);
 // } 
 
-$("#popup_button").on("click", function() {
+$("#popup_button").on("click", function () {
     $("#ac-wrapper").css("display", "none");
 })
 
-$(function(){
-    $('#show').on('click',function(){        
-        $('.card-reveal').slideToggle('slow');
-    });
-    
-    $('.card-reveal .close').on('click',function(){
-        $('.card-reveal').slideToggle('slow');
-    });
+$('.show-btn').on('click', function () {
+    $('div.card-reveal[data-rel=' + $(this).data('rel') + ']').slideToggle('slow');
+});
+
+$('.card-reveal .close').on('click', function () {
+    $('div.card-reveal[data-rel=' + $(this).data('rel') + ']').slideToggle('slow');
 });

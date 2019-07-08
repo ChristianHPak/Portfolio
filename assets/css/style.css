@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-    color: white;
+    font-weight: 500;
     text-decoration: none;
     cursor: pointer;
 }
@@ -108,6 +108,9 @@ li:hover {
     background: white;
     text-align: center;
     margin: 1em auto;
+    -webkit-box-shadow: 0px 0px 14px 1px rgba(80, 71, 71, 0.75);
+    -moz-box-shadow: 0px 0px 14px 1px rgba(80, 71, 71, 0.75);
+    box-shadow: 0px 0px 14px 1px rgba(80, 71, 71, 0.75);
 }
 
 .text_padding {
@@ -239,8 +242,8 @@ li:hover {
 }
 
 .img-responsive {
-    width: 100%;
-    height: 100%;
+    width: 300.8px;
+    height: 165.02px;
 }
 
 .project-name {
@@ -254,4 +257,36 @@ li:hover {
 
 li:hover {
     color: black;
+}
+
+.card-header {
+    width: 100%;
+}
+
+.acknowledge {
+    width: 100%;
+    list-style-type: disc;
+    text-align: left;
+    padding: 0;
+    font-size: .9em;
+}
+
+.graduate {
+    padding: 0;
+    list-style-type: circle;
+    text-decoration: #000;
+}
+
+.location {
+    color: brown;
+    border-bottom: .1em solid brown;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: square;
+    font-size: 1.2em;
+}
+
+.location:hover {
+    font-weight: bold;
+    color: red;
 }

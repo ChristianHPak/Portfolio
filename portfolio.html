@@ -11,20 +11,21 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="#home">
+        <a href="index.html">
             <li>Home</li>
         </a>
         <a href="#about">
-            <li><i class="fas fa-user"></i> About</li>
+            <li><i class="fas fa-user red"></i> About</li>
         </a>
         <a href="#projects">
-            <li><i class="fas fa-tasks"></i> Projects</li>
+            <li><i class="fas fa-tasks yellow"></i> Projects</li>
         </a>
         <a href="#skills">
             <li><i class="fas fa-code"></i> Skills</li>
@@ -351,9 +352,49 @@
         <div class="slot bottom-border row eighty">
             <div class="project-lang row">
                 <div class="col-lg">
-                    <div>
-                        <img src="assets/images/react.png" alt="react">
+
+                    <div class="card">
+                        <div class="card-header language-type">
+                            Front End
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <img class="skill-image" src="assets/images/html5.png" alt="HTML5">
+                                <img class="skill-image" src="assets/images/css3.png" alt="CSS3">
+                                <img class="skill-image" src="assets/images/javascript.png" alt="Javascript">
+                                <img class="skill-image" src="assets/images/jquery.png" alt="JQuery">
+                                <img class="skill-image" src="assets/images/react.png" alt="React">
+                                <img class="skill-image" src="assets/images/nodejs.png" alt="Node.js">
+                                <img class="skill-image" src="assets/images/bootstrap.png" alt="bootstrap framework">
+                                <img class="skill-image" src="assets/images/materialize.png" alt="materialize framework">
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="card">
+                        <div class="card-header language-type">
+                            Back End
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <img class="skill-image" src="assets/images/mysql.jpg" alt="mysql">
+                                <img class="skill-image" src="assets/images/mongodb.png" alt="mongodb">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header language-type">
+                            Other
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <img class="skill-image" src="assets/images/github.png" alt="github">
+                                <img class="skill-image" src="assets/images/heroku.png" alt="heroku">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -404,18 +445,18 @@
         </div>
 
         <div class="section-header" id="contact-me">Contact Me</div>
-        <div class="slot eighty">
+        <div class="contact-slot eighty">
             <div id="contacting">
-                <div>
-                    <i class="far fa-envelope"> Email: </i><a href="#">
+                <div class="contact-information">
+                    <i class="far fa-envelope fa-lg"> Email: </i><a class="contact-links" href="#">
                         iamchristianpak@gmail.com</a>
                 </div>
-                <div>
-                    <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/christian-pak-010979168/">
+                <div class="contact-information">
+                    <i class="fab fa-linkedin fa-lg"></i><a class="contact-links" href="https://www.linkedin.com/in/christian-pak-010979168/">
                         LinkedIn</a>
                 </div>
-                <div>
-                    <i class="fab fa-github"></i><a href="https://github.com/ChristianHPak"> Github</a>
+                <div class="contact-information">
+                    <i class="fab fa-github fa-lg"></i><a class="contact-links" href="https://github.com/ChristianHPak"> Github</a>
                 </div>
             </div>
         </div>

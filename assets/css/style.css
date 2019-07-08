@@ -31,6 +31,8 @@ a:hover {
 #main {
     margin-left: 12em;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUL0ImU8-vS0NnQqlIqu_Po1Tfcyl0Uq0CfcjbSSYF5HZycjJ8");
+    background-repeat: repeat;
+    padding-bottom: .3em;
 }
 
 .slot {
@@ -64,9 +66,9 @@ a:hover {
 }
 
 .skill-image {
-    width: 10em;
-    margin-left: .15em;
-    height: 10em;
+    width: 7em;
+    padding: 1em;
+    height: 7em;
 }
 
 .card-img {
@@ -267,13 +269,13 @@ li:hover {
     width: 100%;
     list-style-type: disc;
     text-align: left;
-    padding: 0;
-    font-size: .9em;
+    padding-top: .6em;
+    font-size: .7em;
+    font-weight: 100;
 }
 
 .graduate {
     padding: 0;
-    list-style-type: circle;
     text-decoration: #000;
 }
 
@@ -282,11 +284,33 @@ li:hover {
     border-bottom: .1em solid brown;
     display: flex;
     justify-content: flex-start;
-    list-style-type: square;
+    list-style-type: circle;
     font-size: 1.2em;
 }
 
 .location:hover {
     font-weight: bold;
     color: red;
+}
+
+.contact-slot {
+    height: auto;
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+    color: brown;
+}
+
+.contact-information {
+    padding: 1em;
+    font-weight: 300;
+}
+
+.contact-links {
+    color: black;
+}
+
+.language-type {
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
 }

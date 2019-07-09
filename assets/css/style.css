@@ -107,10 +107,11 @@ li:hover {
 }
 
 .eighty {
-    width: 80%;
+    width: 90%;
     background: white;
     text-align: center;
     margin: 1em auto;
+    margin-right: 2.75em; 
     -webkit-box-shadow: 0px 0px 14px 1px rgba(80, 71, 71, 0.75);
     -moz-box-shadow: 0px 0px 14px 1px rgba(80, 71, 71, 0.75);
     box-shadow: 0px 0px 14px 1px rgba(80, 71, 71, 0.75);

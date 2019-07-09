@@ -6,15 +6,16 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: lightgray;
+    background-color: white;
     overflow-x: hidden;
 }
 
 li {
     list-style-type: none;
-    text-align: center;
-    align-self: center;
+    text-align: left;
     padding: .75em;
+    color: black;
+    font-weight: 100;
 }
 
 a {
@@ -313,4 +314,38 @@ li:hover {
 .language-type {
     font-size: 2em;
     font-family: 'Poppins', sans-serif;
+}
+
+.teal {
+    color: #4aaaa5;
+}
+
+.purple {
+    color: purple;
+}
+
+.orange {
+    color: orange;
+}
+
+
+.green {
+    color: green;
+}
+
+.brown {
+    color: brown;
+}
+
+.sidenav {
+    font-size: 1.2rem;
+}
+
+.about-nav:hover,
+.project-nav:hover,
+.skills-nav:hover,
+.education-nav:hover,
+.contact-nav:hover {
+    border-left: .1em solid;
+    background-color: darkgrey;
 }

@@ -10,6 +10,8 @@
     <script src="https://kit.fontawesome.com/0eb0065a69.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -175,7 +177,7 @@
                         </div><!-- card reveal -->
                     </div>
                 </div>
-
+                <!-- ============================================================================================================== -->
                 <div class="project-lang row">
                     <div class="col-md-4">
                         <div class="card">
@@ -200,7 +202,9 @@
                                 <span class="card-title">Information</span> <button type="button" class="close"
                                     data-dismiss="modal" data-rel="4" aria-label="Close"><span
                                         aria-hidden="true">×</span></button>
-                                <p>This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.</p>
+                                <p>This full-stack site will take in results from your users' surveys, then compare
+                                    their answers with those from other users. The app will then display the name and
+                                    picture of the user with the best overall match.</p>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">Javascript</li>
                                     <li class="list-group-item">JQuery</li>
@@ -276,106 +280,111 @@
                             </div><!-- card reveal -->
                         </div>
                     </div>
+                    <!-- ============================================================================================================== -->
+                    <div class="project-lang row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img class="img-responsive"
+                                        src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/GifTastic.png?raw=true">
+                                </div>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive"
-                                    src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/GifTastic.png?raw=true">
+                                <div class="card-content">
+                                    <span class="card-title project-name">GifTastic</span>
+                                    <button type="button" class="btn btn-custom pull-right show-btn" data-rel="7"
+                                        aria-label="Left Align">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </button>
+                                </div><!-- card content -->
+                                <div class="card-action">
+                                    <a href="https://github.com/ChristianHPak/GifTastic" target="new_blank">Github</a>
+                                    <a href="https://christianhpak.github.io/GifTastic/"
+                                        target="new_blank">Deployment</a>
+                                </div><!-- card actions -->
+                                <div class="card-reveal close" data-rel="7">
+                                    <span class="card-title">Information</span> <button type="button" class="close"
+                                        data-dismiss="modal" data-rel="7" aria-label="Close"><span
+                                            aria-hidden="true">×</span></button>
+                                    <p>The use of the GIPHY API to make a dynamic web page that
+                                        populates
+                                        with gifs of your choice.</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Giphy Apis</li>
+                                        <li class="list-group-item">JSON</li>
+                                        <li class="list-group-item">Ajax</li>
+                                    </ul>
+                                </div><!-- card reveal -->
                             </div>
+                        </div>
 
-                            <div class="card-content">
-                                <span class="card-title project-name">GifTastic</span>
-                                <button type="button" class="btn btn-custom pull-right show-btn" data-rel="7"
-                                    aria-label="Left Align">
-                                    <i class="fa fa-ellipsis-v"></i>
-                                </button>
-                            </div><!-- card content -->
-                            <div class="card-action">
-                                <a href="https://github.com/ChristianHPak/GifTastic" target="new_blank">Github</a>
-                                <a href="https://christianhpak.github.io/GifTastic/" target="new_blank">Deployment</a>
-                            </div><!-- card actions -->
-                            <div class="card-reveal close" data-rel="7">
-                                <span class="card-title">Information</span> <button type="button" class="close"
-                                    data-dismiss="modal" data-rel="7" aria-label="Close"><span
-                                        aria-hidden="true">×</span></button>
-                                <p>The use of the GIPHY API to make a dynamic web page that
-                                    populates
-                                    with gifs of your choice.</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Giphy Apis</li>
-                                    <li class="list-group-item">JSON</li>
-                                    <li class="list-group-item">Ajax</li>
-                                </ul>
-                            </div><!-- card reveal -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img class="img-responsive"
+                                        src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/CrystalCollector.png?raw=true">
+                                </div>
+
+                                <div class="card-content">
+                                    <span class="card-title project-name">Crystal Collector</span>
+                                    <button type="button" class="btn btn-custom pull-right show-btn" data-rel="8"
+                                        aria-label="Left Align">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </button>
+                                </div><!-- card content -->
+                                <div class="card-action">
+                                    <a href="https://github.com/ChristianHPak/Unit-4-Game" target="new_blank">Github</a>
+                                    <a href="https://christianhpak.github.io/Unit-4-Game/"
+                                        target="new_blank">Deployment</a>
+                                </div><!-- card actions -->
+                                <div class="card-reveal close" data-rel="8">
+                                    <span class="card-title">Information</span> <button type="button" class="close"
+                                        data-dismiss="modal" data-rel="8" aria-label="Close"><span
+                                            aria-hidden="true"></span></button>
+                                    <p>A fun and interactive game for web browsers</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Bootstrap</li>
+                                        <li class="list-group-item">Javascript</li>
+                                        <li class="list-group-item">JQuery</li>
+                                    </ul>
+                                </div><!-- card reveal -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img class="img-responsive"
+                                        src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/TriviaGame.png?raw=true">
+                                </div>
+
+                                <div class="card-content">
+                                    <span class="card-title project-name">Trivia Game</span>
+                                    <button type="button" class="btn btn-custom pull-right show-btn" data-rel="9"
+                                        aria-label="Left Align">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </button>
+                                </div><!-- card content -->
+                                <div class="card-action">
+                                    <a href="https://github.com/ChristianHPak/TrainScheduler"
+                                        target="new_blank">Github</a>
+                                    <a href="https://christianhpak.github.io/TrainScheduler/"
+                                        target="new_blank">Deployment</a>
+                                </div><!-- card actions -->
+                                <div class="card-reveal close" data-rel="9">
+                                    <span class="card-title">Information</span> <button type="button" class="close"
+                                        data-dismiss="modal" data-rel="9" aria-label="Close"><span
+                                            aria-hidden="true">×</span></button>
+                                    <p>A Trivia game using JavaScript for the logic and jQuery to manipulate HTML.</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Javascript</li>
+                                        <li class="list-group-item">JQuery</li>
+                                        <li class="list-group-item">Bootstrap</li>
+                                    </ul>
+                                </div><!-- card reveal -->
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive"
-                                    src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/CrystalCollector.png?raw=true">
-                            </div>
-
-                            <div class="card-content">
-                                <span class="card-title project-name">Crystal Collector</span>
-                                <button type="button" class="btn btn-custom pull-right show-btn" data-rel="8"
-                                    aria-label="Left Align">
-                                    <i class="fa fa-ellipsis-v"></i>
-                                </button>
-                            </div><!-- card content -->
-                            <div class="card-action">
-                                <a href="https://github.com/ChristianHPak/Unit-4-Game" target="new_blank">Github</a>
-                                <a href="https://christianhpak.github.io/Unit-4-Game/" target="new_blank">Deployment</a>
-                            </div><!-- card actions -->
-                            <div class="card-reveal close" data-rel="8">
-                                <span class="card-title">Information</span> <button type="button" class="close"
-                                    data-dismiss="modal" data-rel="8" aria-label="Close"><span
-                                        aria-hidden="true"></span></button>
-                                <p>A fun and interactive game for web browsers</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Bootstrap</li>
-                                    <li class="list-group-item">Javascript</li>
-                                    <li class="list-group-item">JQuery</li>
-                                </ul>
-                            </div><!-- card reveal -->
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive"
-                                    src="https://github.com/ChristianHPak/Portfolio/blob/master/assets/images/TriviaGame.png?raw=true">
-                            </div>
-
-                            <div class="card-content">
-                                <span class="card-title project-name">Trivia Game</span>
-                                <button type="button" class="btn btn-custom pull-right show-btn" data-rel="4"
-                                    aria-label="Left Align">
-                                    <i class="fa fa-ellipsis-v"></i>
-                                </button>
-                            </div><!-- card content -->
-                            <div class="card-action">
-                                <a href="https://github.com/ChristianHPak/TrainScheduler" target="new_blank">Github</a>
-                                <a href="https://christianhpak.github.io/TrainScheduler/"
-                                    target="new_blank">Deployment</a>
-                            </div><!-- card actions -->
-                            <div class="card-reveal close" data-rel="4">
-                                <span class="card-title">Information</span> <button type="button" class="close"
-                                    data-dismiss="modal" data-rel="4" aria-label="Close"><span
-                                        aria-hidden="true">×</span></button>
-                                <p>A Trivia game using JavaScript for the logic and jQuery to manipulate HTML.</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Javascript</li>
-                                    <li class="list-group-item">JQuery</li>
-                                    <li class="list-group-item">Bootstrap</li>
-                                </ul>
-                            </div><!-- card reveal -->
-                        </div>
-                    </div>
-
+                    <!-- ============================================================================================================== -->
                 </div>
             </div>
 
@@ -501,10 +510,9 @@
 
     <div id="ac-wrapper" style='display:none'>
         <div id="popup">
-            <center>
-                <h2>Popup Content Here</h2>
-                <input type="submit" name="submit" value="Submit" onClick="PopUp('hide')" />
-            </center>
+            <h2 id="popup-text">Please, let me know who is viewing my website!</h2>
+            <input id="popup-name" type="text" name="view-name">
+            <input id="popup-button" type="submit" name="submit" value="Submit" onClick="PopUp('hide')" />
         </div>
     </div>
 

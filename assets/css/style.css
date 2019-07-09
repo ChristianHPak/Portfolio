@@ -56,10 +56,6 @@ a:hover {
     text-align: center;
 }
 
-.portfolio-image {
-    width: 15em;
-}
-
 .project-lang {
     width: 100%;
     height: auto;
@@ -133,8 +129,8 @@ li:hover {
 }
 
 #popup {
-    width: 20px;
-    height: 17px;
+    width: 20rem;
+    height: 20em;
     background: #FFFFFF;
     border: 5px solid #000;
     border-radius: 25px;
@@ -143,15 +139,11 @@ li:hover {
     box-shadow: #64686e 0px 0px 3px 3px;
     -moz-box-shadow: #64686e 0px 0px 3px 3px;
     -webkit-box-shadow: #64686e 0px 0px 3px 3px;
-    position: relative;
+    /* position: relative; */
     margin: 10% auto;
-}
-
-#instructions {
-    margin-left: 40%;
-    margin-top: .5em;
-    margin-bottom: -1em;
-    opacity: .7;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10em 2.5em 2.5em auto;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
@@ -349,4 +341,25 @@ li:hover {
 .contact-nav:hover {
     border-left: .1em solid;
     background-color: darkgrey;
+}
+
+#popup-text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#popup-name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#popup-button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }

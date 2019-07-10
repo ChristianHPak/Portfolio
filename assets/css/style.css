@@ -143,7 +143,7 @@ li:hover {
     margin: 10% auto;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 10em 2.5em 2.5em auto;
+    grid-template-rows: 10em 2.5em 2.5em 1em auto;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
@@ -348,6 +348,8 @@ li:hover {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    text-align: center;
+    margin: auto;
 }
 
 #popup-name {
@@ -355,6 +357,8 @@ li:hover {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    text-align: center;
+    outline: none;
 }
 
 #popup-button {
@@ -362,4 +366,23 @@ li:hover {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    border-radius: 1em;
+    outline: none;
+}
+
+#popup-or {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+}
+
+#add-name {
+    margin-top: 5em;
+    text-align: center;
 }

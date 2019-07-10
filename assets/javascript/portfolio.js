@@ -38,3 +38,21 @@ $('.card-reveal .close').on('click', function () {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+  var database = firebase.database ();
+
+  var name;
+
+  $("#popup-button").on("click", function() {
+      event.preventDefault();
+
+      name = $("#popup-name").val().trim();
+
+      database.ref().push({
+          name: name
+      })
+  })
+
+  database.ref().on("child_added", function(childSnapshot){
+      $("#add-name").append("<div>" + childSnapshot.val().name + "</div>")
+  })

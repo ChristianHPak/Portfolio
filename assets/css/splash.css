@@ -2,6 +2,7 @@ body {
     background-image: url(https://free4kwallpapers.com/uploads/originals/2019/05/18/awesome-himalayas-wallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 .container {
@@ -430,4 +431,66 @@ button:focus {
 a {
     text-decoration: none !important;
     list-style-type: none;
+}
+
+@media screen and (max-width: 1366px) {
+    html {
+        height: 1024px;
+    }
+
+    .first_circle {
+        left: 43.5%;
+    }
+
+    .pulse-button {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+}
+
+@media screen and (max-width:1024px) {
+    html {
+        height: 1366px;
+    }
+    
+    .first_circle {
+        left: 41.45%;
+    }
+
+    footer {
+        bottom: 2em;
+    }
+}
+
+@media (max-width: 980px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 640px) {
+    
+}
+
+@media (max-width: 414px) {
+    
+}
+
+@media (max-width: 411px) {
+    
+}
+
+@media (max-width: 375px) {
+    
+}
+
+@media (max-width: 360px) {
+    
+}
+
+@media (max-width: 320px) {
+    
 }

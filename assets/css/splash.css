@@ -457,10 +457,6 @@ a {
     .first_circle {
         left: 41.45%;
     }
-
-    footer {
-        bottom: 2em;
-    }
 }
 
 @media (max-width: 980px) {

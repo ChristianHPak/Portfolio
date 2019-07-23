@@ -1,13 +1,16 @@
 /* The sidenav */
 .sidenav {
     height: 100%;
-    width: 12em;
+    width: 10em;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: white;
     overflow-x: hidden;
+    border: 1px solid #0000;
+    -webkit-box-shadow: 0px 0px 14px 1px rgba(80, 71, 71, 0.75);
+    box-shadow: 0px 0px 14px 1px rgba(80, 71, 71, 0.75);
 }
 
 li {
@@ -18,19 +21,44 @@ li {
     font-weight: 100;
 }
 
-a {
-    text-decoration: none;
+#backToSplash {
+    height: 10em;
+    border-bottom: 1px rgb(134, 133, 133) solid;
+    min-height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a:hover {
-    font-weight: 500;
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.homeName,
+.homeTitle {
+    text-align: center;
+    margin: 0;
+}
+
+.homeName {
+    font-size: 1.1em;
+}
+
+.homeTitle {
+    font-size: .9em;
+    color: #4aaaa5;
+}
+
+.homeName:hover,
+.homeTitle:hover {
+    font-weight: lighter;
+    text-decoration: none;
 }
 
 /* actual information */
 #main {
-    margin-left: 12em;
+    margin-left: 10em;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUL0ImU8-vS0NnQqlIqu_Po1Tfcyl0Uq0CfcjbSSYF5HZycjJ8");
     background-repeat: repeat;
     padding-bottom: .3em;
@@ -107,7 +135,7 @@ li:hover {
     background: white;
     text-align: center;
     margin: 1em auto;
-    margin-right: 2.75em; 
+    margin-right: 2.75em;
     -webkit-box-shadow: 0px 0px 14px 1px rgba(80, 71, 71, 0.75);
     -moz-box-shadow: 0px 0px 14px 1px rgba(80, 71, 71, 0.75);
     box-shadow: 0px 0px 14px 1px rgba(80, 71, 71, 0.75);
@@ -210,7 +238,7 @@ li:hover {
     transition: color 0.3s ease;
 }
 
-.card .card-action a:hover {
+.card .card-action a:hover a {
     text-decoration: none;
 }
 
@@ -391,38 +419,20 @@ li:hover {
     display: none;
 }
 
-@media (max-width: 1024) {
-    
-}
+@media (max-width: 1024px) {}
 
-@media (max-width: 980) {
-    
-}
+@media (max-width: 980px) {}
 
-@media (max-width: 768) {
-    
-}
+@media (max-width: 768px) {}
 
-@media (max-width: 640) {
-    
-}
+@media (max-width: 640px) {}
 
-@media (max-width: 414) {
-    
-}
+@media (max-width: 414px) {}
 
-@media (max-width: 411) {
-    
-}
+@media (max-width: 411px) {}
 
-@media (max-width: 375) {
-    
-}
+@media (max-width: 375px) {}
 
-@media (max-width: 360) {
-    
-}
+@media (max-width: 360px) {}
 
-@media (max-width: 320) {
-    
-}
+@media (max-width: 320px) {}

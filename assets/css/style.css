@@ -142,7 +142,9 @@ li:hover {
 }
 
 .text_padding {
-    padding: 1em;
+    padding: .5em;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #ac-wrapper {
